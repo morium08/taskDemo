@@ -1,15 +1,8 @@
 .first-section {
-    margin: 85px 80px 0px 80px;
+    margin: 200px 80px 0px 130px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: space-between;
-    column-gap: 90px;
-}
-
-.person-image{
-    width: 220px;
-    height: 100%;
-    margin-left: 10px;
 }
 
 .border{
@@ -18,45 +11,40 @@
 
 .stay-focused{
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
     font-weight: 700;
     font-style: normal;
     color: #000000;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .mission-2022{
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
     font-weight: 700;
     font-style: normal;
     color: #FFAD5A;  
-    margin-top: 15px; 
-    margin-left: 5px;
+    margin-top: 10px; 
+    margin-left: 10px;
 }
 
 .mission-description{
     font-family: 'Poppins', sans-serif;
-    font-size: 9px;
     font-weight: 500; 
     font-style: normal;
     color: #333333;
     margin-top: 15px;
     line-height: 1.6;
+    width: 70%;
+  
 }
 
 .button{
     margin-top: 12px;
     margin-bottom: 12px;
-    height: 25px;
-    width: 90px;
     font-family: 'Poppins', sans-serif;
-    font-size: 8px;
     font-weight: 500;   
     font-style: normal;
     background-color: #FF5959;
     color: #ffffff;
-    padding: 4px 10px 4px 10px;
     border-radius: 5px;
     border: none;
 }
@@ -64,9 +52,81 @@
 
 .more-text{
     font-family: 'Poppins', sans-serif;
-     font-size: 9px;
     font-weight: 500; 
     font-style: normal;
     color: #333333;
+
+}
+
+@media (max-width: 1000px) {
+    .first-section {
+    margin: 100px 50px 0px 50px;
+    }
+
+    .person-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .stay-focused, .mission-2022 {
+        font-size: 22px;
+    }
+
+    .mission-description, .more-text, .button {
+        font-size: 10px;
+    }
+    .button{
+        width: 130px;
+        padding: 8px 10px 8px 10px;
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1500px) {
+
+    .person-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .stay-focused, .mission-2022 {
+        font-size: 30px;
+    }
+
+    .mission-description, .more-text, .button {
+        font-size: 15px;
+    }
+
+    .button{
+     width: 150px;
+     padding: 10px 12px 10px 12px;
+    }
+
+}
+
+@media(min-width: 1500px) {
+    
+
+    .person-image {
+        width: 300px;
+        height: auto;
+        padding-left: 80px;
+    }
+
+    .stay-focused, .mission-2022 {
+        font-size: 45px;
+    }
+
+    .mission-description, .more-text, .button {
+        font-size: 17px;
+    }
+
+    .mission-description{
+        line-height: 1.7;
+    }
+
+    .button{
+        width: 165px;
+        padding: 14px 14px 14px 14px;
+    }
 
 }
