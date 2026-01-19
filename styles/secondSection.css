@@ -7,13 +7,10 @@
     flex-direction: column;
    
 }
-.heading{
+.main{
+    display: block;
     text-align: center;
-    font-size: 50px;
     font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .highlight{
@@ -66,7 +63,7 @@
 
 .description,.image-description{
     font-family: 'Poppins', sans-serif;
-     font-size: 17px;
+    font-size: 17px;
     font-weight: 500; 
     font-style: normal;
     color: #333333;
@@ -80,139 +77,149 @@
 }
 
 .header1, .header2{
- font-weight: 600;
+    font-weight: 600;
 }
 
 @media (max-width: 1000px) {
 
     .second-section{
-    margin: 50px 20px 0px 20px;
-    font-size: 18px;
-  }
+        margin: 50px 20px 0px 20px;
+        font-size: 18px;
+    }
 
-  .heading{
-    font-size: clamp(24px, 5vw, 40px);
-  }
+    .main{
+        font-size: 30px;
+    }   
 
   .grid-view{
-    padding: 20px 0px 0px 0px;
-    column-gap: 10px;
-    row-gap: 18px;
-    width: 100%;
-  }
+        padding: 20px 0px 0px 0px;
+        column-gap: 10px;
+        row-gap: 18px;
+        width: 100%;
+    }
 
   .illustrator{
-    width: 160px;
-    height: auto;
-    padding-left: 0;
-    margin: 16px auto 0;
-    display: block;
-  }
+        width: 160px;
+        height: auto;
+        padding-left: 0;
+        margin: 16px auto 0;
+        display: block;
+    }
 
   .title{
-    font-size: 18px;
-  }
+        font-size: 18px;
+    }
 
   .description,.image-description{
-    font-size: 9px;
-    margin-bottom: 10px;
-  }
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
 
    .header1, .header2{
-    font-size: 18px;
-    margin-bottom: 10px;
-   }
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 
    .image-description{
-    margin-bottom: 20px;
-   }
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+   .coding-image,
+  .project-image{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+    }
+
+  
 }
 @media(min-width: 1000px) and (max-width: 1500px) {
 
     .second-section{
-    margin: 70px 50px 0px 50px;
-    font-size: 22px;
-  }
+        margin: 70px 50px 0px 50px;
+        font-size: 22px;
+    }
 
-  .heading{
-    font-size: 44px;
-  }
+  .main{
+        font-size: 44px;
+    }
 
   .grid-view{
-    padding: 30px 40px 40px 40px;
-    column-gap: 22px;
-  }
+        padding: 30px 40px 40px 40px;
+        column-gap: 22px;
+    }
 
   .illustrator{
-    width: 200px;
-    height: auto;
-  }
+        width: 200px;
+        height: auto;
+    }
 
   .title{
-    font-size: 22px;
-  }
+        font-size: 22px;
+    }
 
   .description,.image-description{
-    font-size: 15px;
-  }
+        font-size: 15px;
+    }
 
   .header1, .header2{
-    font-size: 25px;
-    margin-bottom: 10px;
+        font-size: 25px;
+        margin-bottom: 10px;
     }
 
     .image-description{
- margin-bottom: 25px;
-}
+        margin-bottom: 25px;
+    }
 
  .button{
      width: 210px;
      padding: 8px 14px 8px 14px;
-
- }
+    }
 }
 @media(min-width: 1500px) {
 
     .second-section{
         margin: 85px 80px 0px 80px;
         font-size: 25px;
-  }
+    }
 
-  .heading{
-     font-size: 50px;
-  }
+  .main{
+        font-size: 50px;
+    }
 
   .grid-view{
         padding: 40px 100px 50px 80px;
-     column-gap: 35px;
-  }
+        column-gap: 35px;
+    }
 
   .illustrator{
-     width: 230px;
-     height: 230px;
-  }
+        width: 230px;
+        height: 230px;
+    }
 
   .title,.header1,.header2{
-     font-size: 24px;
-  }
+        font-size: 24px;
+    }
 
   .description,.image-description{
-     font-size: 17px;
-  }
+        font-size: 17px;
+    }
 
   .header1, .header2{
-  font-size: 28px;
-  margin-bottom: 10px;
+        font-size: 28px;
+        margin-bottom: 10px;
     }
 
     .image-description{
- margin-bottom: 25px;
-}
+        margin-bottom: 25px;
+    }
 
  .button{
-     width: 240px;
-     padding: 14px 20px 14px 20px;
- }
+        width: 240px;
+        padding: 14px 20px 14px 20px;
+    }
 }
 
 .image-section{
@@ -237,7 +244,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 50px;
 }
 
 .coding-shape-image{
@@ -254,9 +261,9 @@
 .project-shape-image{
     display: flex;
     position: absolute;
-    flex-direction: flex-end;
     top: 45px;
-    left: 1450px;
+    right: -90px;  
+    left: auto; 
     width: 210px;
     height: 200px;
     z-index: -1;
@@ -271,7 +278,7 @@
 .project-image{
     width: 500px;
     height: auto;
-    margin-left: 15px;
+    margin-left: 100px;
 }
 
 
