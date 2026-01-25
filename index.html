@@ -16,9 +16,30 @@
     <link rel="stylesheet" href="styles/firstSection.css">
     <link rel="stylesheet" href="styles/secondSection.css">
     <link rel="stylesheet" href="styles/thirdSection.css">
+    <link rel="stylesheet" href="styles/navBar.css">
 </head>
 
 <body>
+
+
+    <nav class="navbar">
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            ☰
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
     <div class="first-section">
         <div class="left-side">
             <div class="border">
@@ -81,8 +102,10 @@
         </div>
         <div class="image-section">
             <div class="coding-image-box">
-                <img class="coding-shape-image" src="images/shapes/shape-1.png">
-                <img class="coding-image" src="images/pictures/coding.png" alt="coding image">
+                <div class="image-box">
+                    <img class="coding-shape-image" src="images/shapes/shape-1.png">
+                    <img class="coding-image" src="images/pictures/coding.png" alt="coding image">
+                </div>
                 <div class="more-text">
                     <div class="header1">Develop</div>
                     <div class="header2">Without Limits</div>
@@ -104,8 +127,10 @@
                         intersection of humanitarian assistance, sustainable development and financial inclusion.</div>
                     <div class="button">Read The Documentation</div>
                 </div>
-                <img class="project-shape-image" src="images/shapes/shape-1.png">
-                <img class="project-image" src="images/pictures/project.png" alt="project image">
+                <div class="image-box">
+                    <img class="project-shape-image" src="images/shapes/shape-1.png">
+                    <img class="project-image" src="images/pictures/project.png" alt="project image">
+                </div>
             </div>
         </div>
     </div>
