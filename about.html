@@ -5,22 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="styles/navBar.css">
+    <link rel="stylesheet" href="styles/output.css">
+
 </head>
 
 <body>
-    <nav class="navbar">
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            ☰
-        </label>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="bg-[#FDE4CD] sticky top-0 z-100 -mx-2.5 -mt-2.5 mb-10 font-['Poppins']">
+        <div>
+            <!-- Hamburger menu for mobile -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <label for="menu-toggle"
+                class="hidden max-[1000px]:flex justify-end text-[28px] h-15 px-5 cursor-pointer items-center">
+                ☰
+            </label>
+
+            <!-- Navigation links -->
+            <ul
+                class="hidden peer-checked:flex max-[1000px]:flex-col max-[1000px]:w-full lg:flex list-none m-0 p-0 overflow-hidden">
+                <li class="flex-1 max-[1000px]:flex-none">
+                    <a href="index.html"
+                        class="flex no-underline text-[25px] min-[1001px]:max-[1500px]:text-[22px] max-[1000px]:text-[20px] font-semibold text-black items-center justify-center h-15 hover:text-[rgb(118,116,116)] hover:bg-[#EECBB3] transition-all duration-200 max-[1000px]:w-full">Home</a>
+                </li>
+                <li class="flex-1 max-[1000px]:flex-none">
+                    <a href="about.html"
+                        class="flex no-underline text-[25px] min-[1001px]:max-[1500px]:text-[22px] max-[1000px]:text-[20px] font-semibold text-black items-center justify-center h-15 hover:text-[rgb(118,116,116)] hover:bg-[#EECBB3] transition-all duration-200 max-[1000px]:w-full">About</a>
+                </li>
+                <li class="flex-1 max-[1000px]:flex-none">
+                    <a href="services.html"
+                        class="flex no-underline text-[25px] min-[1001px]:max-[1500px]:text-[22px] max-[1000px]:text-[20px] font-semibold text-black items-center justify-center h-15 hover:text-[rgb(118,116,116)] hover:bg-[#EECBB3] transition-all duration-200 max-[1000px]:w-full">Services</a>
+                </li>
+                <li class="flex-1 max-[1000px]:flex-none">
+                    <a href="portfolio.html"
+                        class="flex no-underline text-[25px] min-[1001px]:max-[1500px]:text-[22px] max-[1000px]:text-[20px] font-semibold text-black items-center justify-center h-15 hover:text-[rgb(118,116,116)] hover:bg-[#EECBB3] transition-all duration-200 max-[1000px]:w-full">Portfolio</a>
+                </li>
+                <li class="flex-1 max-[1000px]:flex-none">
+                    <a href="contact.html"
+                        class="flex no-underline text-[25px] min-[1001px]:max-[1500px]:text-[22px] max-[1000px]:text-[20px] font-semibold text-black items-center justify-center h-15 hover:text-[rgb(118,116,116)] hover:bg-[#EECBB3] transition-all duration-200 max-[1000px]:w-full">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <h1>About Us</h1>
 </body>

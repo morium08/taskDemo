@@ -38,8 +38,6 @@
 
 .box-1 {
     background-color: rgb(234, 250, 255);
-    border-radius: 20px;
-
 }
 
 .box-2 {
@@ -217,21 +215,23 @@
         height: 200px;
     }
 
-    .coding-image{
+    .coding-image {
         margin-right: 20px;
         margin-left: -10px;
     }
 
-    .project-image{
+    .project-image {
         margin-left: 20px;
-        margin-right:-10px;
+        margin-right: -10px;
     }
 
-    .coding-shape-image,.project-shape-image {
+    .coding-shape-image,
+    .project-shape-image {
         width: 120px;
         height: 120px;
         margin-right: -10px;
     }
+
     .coding-shape-image {
         top: 30px;
         left: -60px;
@@ -341,6 +341,3 @@
         padding: 14px 20px 14px 20px;
     }
 }
-
-
-
